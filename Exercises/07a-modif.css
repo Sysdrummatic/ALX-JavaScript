@@ -1,0 +1,33 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+body {
+  font-family: "Inter", sans-serif;
+  /* margin: 0 auto; */
+  /* border-color: black; */
+  background: url("https://free4kwallpapers.com/uploads/originals/2019/06/03/airplane-above-the-clouds-wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 20px;
+  padding: 20px 20px 20px 20px;
+}
+
+.wrapper {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 400px;
+  width: 50vw;
+  background: #ffffff;
+  box-shadow: 20px 20px 20px 20px #0000001a;
+  /* border: 1px solid; */
+  border-radius: 25px;
+  
+
+h1 {
+  margin: 5px 5px 5px 5px;
+  text-align: center;
+}

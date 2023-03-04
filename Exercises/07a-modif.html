@@ -12,87 +12,97 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="wrapper">
-      <div>
-        <h1>Formularz rezerwacji biletu lotniczego</h1>
-      </div>
-      <div>
-        <form method="get">
-          <p>
-            Twoje imię:
-            <input
-              type="text"
-              name="name"
-              placeholder="Wpisz imię."
-              autofocus
-              required
-            />
-          </p>
-          <p>
-            Twoje nazwisko:
-            <input
-              type="text"
-              name="lastName"
-              placeholder="Wpisz nazwisko."
-              required
-            />
-          </p>
-          <p>
-            Data wyloty:
-            <input
-              type="date"
-              name="departureDate"
-              placeholder="Wpisz datę wylotu."
-              required
-            />
-          </p>
+    <div class="centerWindow">
+      <div class="hello">
+        <div>
+          <h1>Formularz rezerwacji biletu lotniczego</h1>
+        </div>
+        <div>
+          <form method="get">
+            <p class="typeadata">
+              Twoje imię:
+              <input
+                class="data1"
+                type="text"
+                name="name"
+                placeholder="Wpisz imię."
+                autofocus
+                required
+              />
+            </p>
+            <p class="typeadata">
+              Twoje nazwisko:
+              <input
+                class="data1"
+                type="text"
+                name="lastName"
+                placeholder="Wpisz nazwisko."
+                required
+              />
+            </p>
+            <p class="typeadata">
+              Data wyloty:
+              <input
+                class="data2"
+                type="date"
+                name="departureDate"
+                placeholder="Wpisz datę wylotu."
+                required
+              />
+            </p>
 
-          <p>
-            Wylot z:
-            <select name="originPoint">
-              <option value="">-- wybierz --</option>
-              <option value="m1">Kraków</option>
-              <option value="m2">Gdańsk</option>
-              <option value="m3">Sosnowiec</option>
-              <option value="m3">Katowice</option>
-            </select>
-          </p>
+            <p class="typeadata">
+              Wylot z:
+              <select name="originPoint" class="data3">
+                <option value="">-- wybierz --</option>
+                <option value="m1">Kraków</option>
+                <option value="m2">Gdańsk</option>
+                <option value="m3">Sosnowiec</option>
+                <option value="m3">Katowice</option>
+              </select>
+            </p>
 
-          <p>
-            Przylot do:
-            <select name="destinationPoint">
-              <option value="">-- wybierz --</option>
-              <option value="m1">Kraków</option>
-              <option value="m2">Gdańsk</option>
-              <option value="m3">Sosnowiec</option>
-              <option value="m3">Katowice</option>
-            </select>
-          </p>
+            <p class="typeadata">
+              Przylot do:
+              <select name="destinationPoint" class="data3">
+                <option value="">-- wybierz --</option>
+                <option value="m1">Kraków</option>
+                <option value="m2">Gdańsk</option>
+                <option value="m3">Sosnowiec</option>
+                <option value="m3">Katowice</option>
+              </select>
+            </p>
 
-          <p>
-            Klasa VIP:
-            <input type="radio" name="comfort" value="tak" /> Tak
-            <input type="radio" name="comfort" value="nie" /> Nie
-          </p>
-          <p>
-            Posiłek:
-            <input type="checkbox" name="meal1" value="appetizer" /> Przystawka
-            <input type="checkbox" name="meal2" value="lunch" /> Obiad
-            <input type="checkbox" name="meal3" value="dessert" /> Deser
-          </p>
-          <p>
-            Dodatkowe uwagi:
-            <textarea
-              name="remarks"
-              placeholder="Wpisz swoje uwagi."
-              required
-            ></textarea>
-          </p>
+            <p>
+              Klasa VIP:
+              <input type="radio" name="comfort" value="tak" /> Tak
+              <input type="radio" name="comfort" value="nie" /> Nie
+            </p>
+            <p>
+              Posiłek:
+              <input type="checkbox" name="meal1" value="appetizer" />
+              Przystawka
+              <input type="checkbox" name="meal2" value="lunch" /> Obiad
+              <input type="checkbox" name="meal3" value="dessert" /> Deser
+            </p>
+            <p>
+              <textarea
+                name="remarks"
+                placeholder="Wpisz swoje uwagi."
+                required
+              ></textarea>
+            </p>
 
-          <button type="submit">Zarezerwuj</button>
-          <button type="reset">Anuluj</button>
-        </form>
+            <div class="buttons">
+              <button class="button" type="submit">Zarezerwuj</button>
+              <button class="button" type="reset">Anuluj</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
+    <!-- <div class="wrapper">
+      
+    </div> -->
   </body>
 </html>

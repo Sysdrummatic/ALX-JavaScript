@@ -1,53 +1,53 @@
 <script>
-  let zm1 = "SUKCES";
-  let zm2 = "słownik";
-  let zm3 = "występuje";
-  let zm4 = "jest";
-  let zm5 = "WYSIŁKIEM";
-  let zm6 = "Jedynym";
-  let zm7 = "gdzie";
-  let zm8 = "miejscem";
-  let zm9 = "przed";
-  let zmPomoc;
+  let var1 = "SUKCES";
+  let var2 = "słownik";
+  let var3 = "występuje";
+  let var4 = "jest";
+  let var5 = "WYSIŁKIEM";
+  let var6 = "Jedynym";
+  let var7 = "gdzie";
+  let var8 = "miejscem";
+  let var9 = "przed";
+  let supVar;
 
-  //Przypisywanie wartości
+  //Variables reasingment
 
-  zmPomoc = zm1; //Ok
-  zm1 = zm6;
+  supVar = var1; //Ok
+  var1 = var6;
 
-  zm6 = zmPomoc; //OK
-  zmPomoc = zm2;
-  zm2 = zm8;
+  var6 = supVar; //OK
+  supVar = var2;
+  var2 = var8;
 
-  zm8 = zmPomoc; //OK
-  zmPomoc = zm3;
-  zm3 = zm7;
+  var8 = supVar; //OK
+  supVar = var3;
+  var3 = var7;
 
-  zm7 = zmPomoc; //OK
-  zmPomoc = zm4;
-  zm4 = zm6;
+  var7 = supVar; //OK
+  supVar = var4;
+  var4 = var6;
 
-  zm6 = zmPomoc; //OK
-  zmPomoc = zm5;
-  zm5 = zm7;
+  var6 = supVar; //OK
+  supVar = var5;
+  var5 = var7;
 
-  zm7 = zmPomoc; //OK
-  zmPomoc = zm6;
-  zm6 = zm9;
+  var7 = supVar; //OK
+  supVar = var6;
+  var6 = var9;
 
-  zm9 = zm8;
-  zm8 = zmPomoc; //OK
+  var9 = var8; //OK
+  var8 = supVar;
 
   //Quazi test
 
-  const result = `${zm1} ${zm2} ${zm3} ${zm4} ${zm5} ${zm6} ${zm7} ${zm8} ${zm9}!`;
+  const result = `${var1} ${var2} ${var3} ${var4} ${var5} ${var6} ${var7} ${var8} ${var9}!`;
 
   const correct =
     "Jedynym miejscem gdzie SUKCES występuje przed WYSIŁKIEM jest słownik!";
 
   if (result === correct) {
-    alert(result);
+    console.log(result);
   } else {
-    alert("Zmienne nie zostały poprawnie przypisane!");
+    console.log("Zmienne nie zostały poprawnie przypisane!");
   }
 </script>

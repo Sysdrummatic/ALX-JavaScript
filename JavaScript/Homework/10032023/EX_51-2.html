@@ -1,0 +1,53 @@
+<script>
+  let zm1 = "SUKCES";
+  let zm2 = "słownik";
+  let zm3 = "występuje";
+  let zm4 = "jest";
+  let zm5 = "WYSIŁKIEM";
+  let zm6 = "Jedynym";
+  let zm7 = "gdzie";
+  let zm8 = "miejscem";
+  let zm9 = "przed";
+  let zmPomoc;
+
+  //Przypisywanie wartości
+
+  zmPomoc = zm1; //Ok
+  zm1 = zm6;
+
+  zm6 = zmPomoc; //OK
+  zmPomoc = zm2;
+  zm2 = zm8;
+
+  zm8 = zmPomoc; //OK
+  zmPomoc = zm3;
+  zm3 = zm7;
+
+  zm7 = zmPomoc; //OK
+  zmPomoc = zm4;
+  zm4 = zm6;
+
+  zm6 = zmPomoc; //OK
+  zmPomoc = zm5;
+  zm5 = zm7;
+
+  zm7 = zmPomoc; //OK
+  zmPomoc = zm6;
+  zm6 = zm9;
+
+  zm9 = zm8;
+  zm8 = zmPomoc; //OK
+
+  //Quazi test
+
+  const result = `${zm1} ${zm2} ${zm3} ${zm4} ${zm5} ${zm6} ${zm7} ${zm8} ${zm9}!`;
+
+  const correct =
+    "Jedynym miejscem gdzie SUKCES występuje przed WYSIŁKIEM jest słownik!";
+
+  if (result === correct) {
+    alert(result);
+  } else {
+    alert("Zmienne nie zostały poprawnie przypisane!");
+  }
+</script>
